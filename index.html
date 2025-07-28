@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jennifer Aniston Fan Club</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Jennifer Aniston Logo" class="logo">
+    <h1>Jennifer Aniston 💕💕❤️🧡</h1>
+    <div class="settings-dropdown" id="settingsDropdown">
+      ⚙️
+      <div class="dropdown-content">
+        <a href="#" id="profileBtn">Profile</a>
+        <a href="#" id="logoutBtn">Logout</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+  </header>
+  <div class="profile-dropdown" id="profileDropdown">
+    🤵🏻
+    <div class="dropdown-content">
+      <span id="profileUsername"></span>
+      <span id="profileEmail"></span>
+      <span id="profileDOB"></span>
+      <label>
+        <!-- Profile Edit Modal -->
+<div id="editProfileModal" class="profile-modal">
+  <div class="modal-content">
+    <span id="closeProfileModal" class="close">&times;</span>
+    <h2>Edit Profile</h2>
+    <label>Username: <input type="text" id="editUsername"></label>
+    <label>Email: <input type="email" id="editEmail"></label>
+    <label>Date of Birth: <input type="date" id="editDOB"></label>
+    <label>Dark Mode: <input type="checkbox" id="editDarkMode"></label>
+    <button id="saveProfileBtn">Save Changes</button>
+    <button id="changePasswordBtn">Change Password</button>
+  </div>
+</div>
+        Dark Mode
+        <input type="checkbox" id="darkModeToggle">
+      </label>
+    </div>
+  </div>
+  <main>
+    <div id="gallery"></div>
+  </main>
+  <footer>
+    <button id="homeBtn">💒 Home</button>
+    <button id="messageBtn">💌 Message</button>
+    <button id="loveBtn">💕 Love</button>
+  </footer>
+  <script src="js/appwrite-config.js" type="module"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
