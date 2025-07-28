@@ -1,5 +1,5 @@
-import { account, databases } from './appwrite-config.js';
-import { payWithTelegramStars } from './payment.js';
+import { account, databases } from 'appwrite-config.js';
+import { payWithTelegramStars } from 'payment.js';
 
 // Registration handler
 document.getElementById('payBtn')?.addEventListener('click', async () => {
